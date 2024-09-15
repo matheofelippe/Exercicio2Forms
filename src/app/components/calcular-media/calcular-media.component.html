@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+  <div>
+    <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Calcular Média</div>
+      <div class="card-body">
+        <form #formMedia="ngForm" (ngSubmit)="calculaMedia(formMedia)">
+          <label for="AC1" class="form-label">AC1</label>
+          <input type="number" class="form-control" id="AC1" name="AC1" ngModel>
+    
+          <label for="AC2" class="form-label">AC2</label>
+          <input type="number" class="form-control" id="AC2" name="AC2" ngModel>
+    
+          <label for="AG" class="form-label">AG</label>
+          <input type="number" class="form-control" id="AG" name="AG" ngModel>
+    
+          <label for="AF" class="form-label">AF</label>
+          <input type="number" class="form-control" id="AF" name="AF" ngModel>
+      
+          <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <p>Media Final: {{mediaFinal}}</p>
+      <p>Resultado: {{resultado}}</p>    
+    </div>
+  </div>
+</div>

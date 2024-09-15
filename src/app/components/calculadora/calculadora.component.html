@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div>
+      <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Calculadora</div>
+        <div class="card-body">
+          <form #formOperacao="ngForm" (ngSubmit)="calculaOperacao(formOperacao)">
+            <label for="number1" class="form-label">Número 1</label>
+            <input id="number1" name="number1" type="number" class="form-control" ngModel>
+      
+            <label for="number2" class="form-label">Número 2</label>
+            <input id="number2" name="number2" type="number" class="form-control" ngModel>
+      
+            <label for="operacaoMatematica" class="form-label">Operação matemática</label>
+            <input [(ngModel)]="operacao" id="operacaoMatematica" name="operacaoMatematica" type="text" class="form-control" ngModel>
+        
+            <button type="submit" class="btn btn-primary mt-3">Calcular</button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p>Resultado: {{resultado}}</p>    
+      </div>
+    </div>
+  </div>

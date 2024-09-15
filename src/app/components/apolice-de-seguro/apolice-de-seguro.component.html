@@ -1,0 +1,30 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div>
+      <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Apólice de Seguro</div>
+        <div class="card-body">
+          <form #formSeguro="ngForm" (ngSubmit)="calculaSeguro(formSeguro)">
+            <label for="nomeSegurado" class="form-label">Nome do segurado</label>
+            <input type="text" class="form-control" id="nomeSegurado" name="nomeSegurado" ngModel>
+
+            <label for="sexo" class="form-label">Sexo</label>
+            <select for="sexo" class="form-select" aria-label="Sexo" id="sexo" name="sexo" ngModel>
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+              </select>
+      
+            <label for="idade" class="form-label">Idade</label>
+            <input type="number" class="form-control" id="idade" name="idade" ngModel>
+      
+            <label for="valorAutomovel" class="form-label">Valor do automóvel</label>
+            <input [(ngModel)]="valorAutomovel" type="number" class="form-control" id="valorAutomovel" name="valorAutomovel" ngModel>
+        
+            <button type="submit" class="btn btn-primary mt-3">Consultar</button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p>Valor do seguro: {{valorSeguro}}</p>    
+      </div>
+    </div>
+  </div>
