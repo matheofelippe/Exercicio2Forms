@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-center align-items-center vh-100">
   <div>
-    <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+    <div class="card text-bg-secondary mb-3 bg-danger" style="max-width: 18rem;">
       <div class="card-header">Calcular Média</div>
       <div class="card-body">
         <form #formMedia="ngForm" (ngSubmit)="calculaMedia(formMedia)">
@@ -16,7 +16,7 @@
           <label for="AF" class="form-label">AF</label>
           <input type="number" class="form-control" id="AF" name="AF" ngModel>
       
-          <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+          <button type="submit" class="btn btn-success mt-3">Calcular</button>
         </form>
       </div>
     </div>

@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-center align-items-center vh-100">
     <div>
-      <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+      <div class="card text-bg-secondary mb-3 bg-info" style="max-width: 18rem;">
         <div class="card-header">Calculadora</div>
         <div class="card-body">
           <form #formOperacao="ngForm" (ngSubmit)="calculaOperacao(formOperacao)">
@@ -13,7 +13,7 @@
             <label for="operacaoMatematica" class="form-label">Operação matemática</label>
             <input [(ngModel)]="operacao" id="operacaoMatematica" name="operacaoMatematica" type="text" class="form-control" ngModel>
         
-            <button type="submit" class="btn btn-primary mt-3">Calcular</button>
+            <button type="submit" class="btn btn-success mt-3">Calcular</button>
           </form>
         </div>
       </div>
